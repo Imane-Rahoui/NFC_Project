@@ -32,9 +32,9 @@ public class NFCWriterActivity extends AppCompatActivity {
 
     // TODO Analyser le code et comprendre ce qui est fait // done
     // TODO Ajouter un formulaire permettant à un utilisateur d'entrer le texte à mettre dans le tag // done
-    // TODO Le texte peut être 1) une URL 2) un numéro de téléphone 3) un plain texte
-    // TODO Utiliser le view binding
-    // TODO L'app ne doit pas crasher si les tags sont mal formattés
+    // TODO Le texte peut être 1) une URL 2) un numéro de téléphone 3) un plain texte // done
+    // TODO Utiliser le view binding // done
+    // TODO L'app ne doit pas crasher si les tags sont mal formattés // done
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -92,7 +92,10 @@ public class NFCWriterActivity extends AppCompatActivity {
         viewModel.getTagWritten().observe(this, new Observer<Void>() {
             @Override
             public void onChanged(Void unused) {
+                //formulaire.setVisibility(View.VISIBLE);
+                //cardReader.setVisibility(View.GONE);
                 Toast.makeText(NFCWriterActivity.this, "Tag written", Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
 
