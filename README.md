@@ -4,8 +4,8 @@
 - RAMZI Mouad 
 - MITRE Zohair
 - SAHRAOUI Fatima-ezzahra
-- ..
-
+- BENHACHOUM Anas
+- ABJILINI Wafaa
 Dans ce projet, vous allez apprendre à lire et à écrire des tags NFC sur Android. 
 L'objectif est de vous familiariser avec les API Android pour la lecture et l'écriture de tags NFC.
 
